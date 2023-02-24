@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: characters
 name: Nox Luxignis
 slug: nox
-sentence: Nox Luxignis is a Mystical Warrior who Bears the Phoenix Feather and Drifts from Shift #0
+sentence: "Nox Luxignis is a Mystical Warrior who Bears the Phoenix Feather and Drifts from Shift #0"
 advancement:
   '+4 Stat': false
   '+1 Edge': false

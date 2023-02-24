@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: characters
 name: Anthony Giovanni
 slug: ant
-sentence: Anthony Giovanni is a Stealthy Vampire Warrior who Slays Monsters and Drifts from Purple Shift #45
+sentence: "Anthony Giovanni is a Stealthy Vampire Warrior who Slays Monsters and Drifts from Purple Shift #45"
 advancement:
   '+4 Stat': false
   '+1 Edge': false

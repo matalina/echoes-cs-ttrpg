@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: characters
 name: Alex Brizo
 slug: alex
-sentence: Alex Brizo is an Inquisitive Dream walking Explorer with latent talents who Commands Mental Powers and is an Anchor from Shift #0
+sentence: "Alex Brizo is an Inquisitive Dream walking Explorer with latent talents who Commands Mental Powers and is an Anchor from Shift #0"
 advancement:
   '+4 Stat': false
   '+1 Edge': false

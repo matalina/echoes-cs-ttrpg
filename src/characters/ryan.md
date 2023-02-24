@@ -6,7 +6,7 @@ eleventyNavigation:
   parent: characters
 name: Ryan Elliot
 slug: ryan
-sentence: Ryan Elliot is a Intelligent Former Chevalier Warrior with a PhD who Slays Monsters and is an Anchor from Purple Shift #45
+sentence: "Ryan Elliot is a Intelligent Former Chevalier Warrior with a PhD who Slays Monsters and is an Anchor from Purple Shift #45"
 advancement:
   '+4 Stat': false
   '+1 Edge': false
