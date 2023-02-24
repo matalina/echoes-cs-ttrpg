@@ -1,0 +1,14 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: homebrew
+  title: Homebrew
+  order: 4
+---
+
+<h1>Homebrew</h1>
+
+<nav>
+{% set navPages = collections.all | eleventyNavigation("homebrew") %}
+{{ navPages | eleventyNavigationToHtml | safe }}
+</nav>
