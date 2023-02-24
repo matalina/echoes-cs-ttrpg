@@ -1,0 +1,98 @@
+---
+layout: base.njk
+---
+
+<div class="uppercase border border-gray-800 text-gray-800 p-3 text-justify mb-5">
+  <h3 class="text-2xl font-bold mb-0">{{sentence}}</h3>
+  <div class="sm:flex sm:justify-end">
+    <strong class="p-3">Advancement:</strong>
+    {% for i, value in advancement %}
+    <span class="p-3">{% if value %} <i class="fa-solid fa-square"></i> {% else %} <i class="fa-regular fa-square"></i> {% endif %} {{i}}</span>
+    {% endfor %}
+  </div>
+  <div class="sm:flex">
+    <div class="md:w-1/4  sm:w-1/2 sm:relative mr-3">
+      <img src="https://themindofnox.files.wordpress.com/2023/02/{{slug}}_rpm_close.jpeg" alt="{{name}}" />
+      <img
+        src="https://themindofnox.files.wordpress.com/2023/02/{{slug}}.png"
+        alt="{{name}}"
+        class="absolute w-32 -left-12 -top-12 hidden md:block"
+        />
+    </div>
+    <div class="md:w-1/4 sm:w-1/2 sm:mr-3">
+      <strong>Tier:</strong>&nbsp;{{tier}}<br/>
+      <strong>Effort:</strong>&nbsp;{{effort}}<br/>
+      <strong>Armor:</strong>&nbsp;{{armor}}<br/>
+      <br/>
+      <strong>Recovery:</strong><br/>
+      {% for i, value in recovery %}
+      {% if value %} <i class="fa-solid fa-square"></i> {% else %} <i class="fa-regular fa-square"></i> {% endif %}
+      {% endfor %}
+      <br/>
+      <strong>Damage:</strong><br/>
+      {% for i, value in damage %}
+      {% if value %} <i class="fa-solid fa-square"></i> {% else %} <i class="fa-regular fa-square"></i> {% endif %}
+      {% endfor %}
+      <br/>
+    </div>
+    <div class="w-full md:w-1/2">
+      <strong>Might:</strong>{%if might.edge > 0 %} ({{might.edge}}) {% endif %}<br/>
+      {% for i in range(0, might.current) %}
+       <i class="fa-solid fa-square"></i>
+      {% endfor %}
+      {% if might.current !== might.pool %}
+      {% for i in range(might.current, might.pool) %}
+       <i class="fa-regular fa-square"></i>
+      {% endfor %}
+      {% endif %}
+      <br/>
+      <strong>Speed:</strong>{%if speed.edge > 0 %} ({{speed.edge}}) {% endif %}<br/>
+      {% for i in range(0, speed.current) %}
+       <i class="fa-solid fa-square"></i>
+      {% endfor %}
+      {% if speed.current !== speed.pool %}
+      {% for i in range(speed.current, speed.pool) %}
+       <i class="fa-regular fa-square"></i>
+      {% endfor %}
+      {% endif %}
+      <br/>
+      <strong>Intellect:</strong>{%if intellect.edge > 0 %} ({{intellect.edge}}) {% endif %}<br/>
+      {% for i in range(0, intellect.current) %}
+       <i class="fa-solid fa-square"></i>
+      {% endfor %}
+      {% if intellect.current !== intellect.pool %}
+      {% for i in range(intellect.current, intellect.pool) %}
+       <i class="fa-regular fa-square"></i>
+      {% endfor %}
+      {% endif %}
+      <br/>
+      <strong>XP:</strong><br/>
+      {% for i in range(0, xp) %}
+       <i class="fa-solid fa-square"></i>
+      {% endfor %}
+      {% if xp === 0 %}
+       <i class="fa-regular fa-square"></i>
+      {% endif %}
+      <br/>
+    </div>
+  </div>
+  <div class="sm:flex">
+    <div class="sm:w-1/2 sm:mr-3">
+      <strong>Skills:</strong>
+      <em class="text-blue-700">(p):</em> {{skills.p}}
+      <em class="text-blue-700">(t):</em> {{skills.t}}
+      <em class="text-blue-700">(s):</em> {{skills.s}}
+      <em class="text-blue-700">(i):</em> {{skills.i}}
+    </div>
+    <div class="sm:w-1/2">
+      <strong>Cyphers:</strong> {{cyphers}}<br/>
+      <strong>Abilities:</strong> {{abilities}}<br/>
+      <strong>Weapons:</strong> {{weapons}}<br/>
+    </div>
+  </div>
+  <div>
+    <strong>Equipment:</strong> {{equipment}}
+  </div>
+</div>
+
+{{content | safe}}

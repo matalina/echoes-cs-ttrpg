@@ -1,0 +1,13 @@
+---
+layout: base.njk
+eleventyNavigation:
+  key: characters
+  title: Characters
+---
+
+<h1>Characters</h1>
+
+<nav>
+{% set navPages = collections.all | eleventyNavigation("characters") %}
+{{ navPages | eleventyNavigationToHtml | safe }}
+</nav>

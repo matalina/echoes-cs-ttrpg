@@ -5,9 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Echoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad5533d136.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
   </head>
-  <body>
-    {{content | safe}}
+  <body class="font-mono w-full xl:w-2/3 2xl:w-1/2 p-3 mx-auto">
+    <header class="md:flex md:justify-between p-3 border-b border-black mb-3">
+      <h1 class="text-lg mb-0">Echoes</h1>
+      <nav>
+      {% set navPages = collections.all | eleventyNavigation %}
+        <ul class="md:flex mb-0">
+        {%- for entry in navPages %}
+          <li class="list-none{% if entry.url == page.url %} my-active-class{% endif %}"">
+            <a
+              class="p-3"
+              href="{{ entry.url }}"
+            >{{ entry.title }}</a>
+          </li>
+        {%- endfor %}
+        </ul>
+      </nav>
+    </header>
+    <main class="p-3">
+      {{content | safe}}
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
