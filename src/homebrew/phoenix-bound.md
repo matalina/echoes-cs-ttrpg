@@ -12,12 +12,12 @@ eleventyNavigation:
 
 Requires: Bound Magic Creature as an origin ability, 3 disadvantages and added Tier Advancement Requirement.
 
-Tier 1: Shroud of Flame
-Tier 2: Hurl Flame
-Tier 3: Font of Healing  or Wings of Fire
-Tier 4: Flame blade
-Tier 5: Fire Tendrils
-Tier 6: Restore Life or Fire Servant
+Tier 1: Shroud of Flame<br/>
+Tier 2: Hurl Flame<br/>
+Tier 3: Font of Healing  or Wings of Fire<br/>
+Tier 4: Flame blade<br/>
+Tier 5: Fire Tendrils<br/>
+Tier 6: Restore Life or Fire Servant<br/>
 
 ### Tier Advancement Addition:
 
@@ -36,12 +36,12 @@ In order to advance to the next tier the Bearer must spend an additional 4XP to 
 
 The focus of the Phoenix bound by the Feather.
 
-Tier 1: Healing Touch for the Bearer
-Tier 2: Devoted Defender of the Bearer
-Tier 3: Hidden Closet
-Tier 4: Inspire Action of the Bearer
-Tier 5: Willing Sacrifice  for the Bearer
-Tier 6: Greater Healing Touch for the Bearer or Restore Life of the Bearer
+Tier 1: Healing Touch for the Bearer<br/>
+Tier 2: Devoted Defender of the Bearer<br/>
+Tier 3: Hidden Closet<br/>
+Tier 4: Inspire Action of the Bearer<br/>
+Tier 5: Willing Sacrifice for the Bearer<br/>
+Tier 6: Greater Healing Touch for the Bearer or Restore Life of the Bearer<br/>
 
 ### Other Tier Advancements for the Phoenix
 
