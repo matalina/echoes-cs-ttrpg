@@ -4,7 +4,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("_site/assets/css/tailwind.css");
   eleventyConfig.addPassthroughCopy("src/assets/css/tailwind.css");
   eleventyConfig.addPassthroughCopy("src/assets/images");
-
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   return {
