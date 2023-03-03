@@ -11,13 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
 
-    {%if leaflet %}
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-    {% endif %}
-
     <script src="https://kit.fontawesome.com/ad5533d136.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QC35HW0V36"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QC35HW0V36');
+    </script>
+
   </head>
   <body class="font-mono w-full xl:w-2/3 2xl:w-1/2 p-3 mx-auto">
     <header class="md:flex md:justify-between p-3 border-b border-black mb-3">

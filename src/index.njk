@@ -5,8 +5,12 @@ eleventyNavigation:
   title: Home
   order: 1
 ---
-<h2>All Pages</h2>
 
+<img src="{{ '/assets/images/echoes.png' | url }}" />
+
+{% include 'newsletter.njk' %}
+
+<h1>All Pages</h1>
 <section id="all">
   {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
 </section>
